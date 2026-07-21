@@ -1,13 +1,10 @@
 
 # Description -------------------------------------------------------------
 ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## # # ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## # # ## ##
-# R script to filter data after process_radtags in Stacks found in Dorsey et al 2023 Conservation genomics of Dioon holmgrenii (Zamiaceae) reveals
-# a history of range expansion, fragmentation, and isolation
-# of populations. Conservation Genetics
-#
-# 9/9/24
-# Modified for use in Conservation Genomics Provides Essential Insights into the Provenance of Ex Situ Collections and their Utility
+# R script to filter data after process_radtags in Stacks found in Dorsey et al. Conservation Genomics Provides Essential Insights into the Provenance of Ex Situ Collections and their Utility
 # for Species Recovery: A Case Study in Encephalartos latifrons
+# Best to run by sections in Rstudio rather than calling the script from the terminal.
+# Some options/directories, etc. neet to be set within sections.
 ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## # # ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## # # ## ##
 
 # Libraries ------------------------------------------------------------------------------------------------------------------------------
