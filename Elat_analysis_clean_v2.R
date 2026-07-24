@@ -867,22 +867,15 @@ write.csv(as.matrix(pwGstNall), paste("pwGstNall_",fname,".csv", sep=""), quote 
 
 
 ## poppr for amova---------------------------------------------------------------
-# 
-# ?dist.dna()
-# setPop(loc80ind50) <- ~popAbs
- 
-amova.res.mean <- poppr.amova(hapsWild, ~popAbs, threads = 16, freq = F, missing = "ignore")
-amova.res.mean
-# 
-# 
-# 
-# 
-## Phi ---------
-# nomiss <- missingno(giObj, "mean")
-# 
-# phiP.res <- Phi_st_Meirmans(nomiss)
-# phiP.res$global
+giObj <- snps
+popNames(giObj)
 
+amova.res.mean <- poppr.amova(giObj, ~popAbs, threads = 16, freq = T, missing = "mean", within = T)
+print(amova.res.mean)
+
+sig.test <- randtest(amova.res.mean, nrepet=999)
+plot(sig.test)
+print(sig.test)
 
 # Hoban allele capture---------------------------------------------------------
 
